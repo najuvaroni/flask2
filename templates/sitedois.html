@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estação do Lanche</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <style>
+        p {
+            margin-bottom: 0;
+        }
+
+        .amarelo {
+            background-color: #FFD704;
+        }
+
+        .ver {
+            background-color: #9c0d0d;
+            height: 300px;
+        }
+
+        .vermelho {
+
+            height: 200px;
+        }
+        .vermelho2 {
+
+           background-repeat: no-repeat;
+            background-size: cover;
+            height: 150px;
+            border-radius: 15px;
+            width: 500px;
+            border: none;
+
+        }
+
+
+
+
+        .ver {
+            background-image: url('/static/img/bannersite2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+
+            color: white;
+            gap: 50px;
+            padding-top: 20px;
+
+        }
+        .pver{
+            padding-bottom: 80px;
+        }
+
+
+        .h1ver {
+            padding: 30px;
+        }
+
+        .bttver {
+            background-color: #DE0A0A;
+            border-radius: 50px;
+            border: none;
+            font-size: 10px;
+            color: white;
+            padding: 20px;
+           width: 200px;
+           height: 50px;
+
+
+        }
+
+
+
+
+        .verm2 {
+            background-color: #FF0000;
+            height: 200px;
+        }
+        .col-12{
+            text-align: center;
+        }
+
+        .verde {
+            color: #FFD704;
+            font-size: 60px;
+            height: 300px;
+            text-align: center;
+            box-shadow: black;
+        }
+
+        .cinza {
+            background-color: #c6c6c6;
+            height: 140px;
+        }
+
+        .vermesc {
+            background-color: #DE0A0A;
+
+        }
+
+        .vermclaro {
+            background-color: #ef0505;
+            height: 250px;
+        }
+
+        #marelo {
+            background-color: #f9f63b;
+        }
+
+        .branco {
+            text-align: end;
+        }
+        .h1img1{
+            color: #DE0A0A;
+        }
+        .pimg1{
+            font-size: small;
+        }
+
+        .imagem {
+            height: 250px;
+
+        }
+
+        .imagem-p {
+            height: 120px;
+        }
+
+        .imagem,
+        .imagem-p {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border: 20px solid #DE0A0A;
+            transition: 0.8s;
+        }
+
+        .imagem:hover,
+        .imagem-p:hover{
+            transform: scale(1.1);
+            transition: 0.8s;
+        }
+
+        .parafinhal{
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .col-md-3 img{
+            width: 280px;
+            border-radius: 20px;
+        }
+        .col-md-6{
+            text-align: left;
+        }
+
+
+.ti{
+            color: #DE0A0A;
+        }
+
+        .tudo1, .tudo2, .tudo3, .tudo4{
+            padding: 50px;
+        }
+        h5{
+            margin-top: 20px;
+        }
+
+
+
+
+  .bttver2{
+            background-color: #DE0A0A;
+            border-radius: 30px;
+            border: none;
+            font-size: 15px;
+            color: white;
+            padding: 15px;
+            width: 200px;
+            margin-top: 80px;
+        }
+        .imgFaleConosco{
+            margin-left: 110px;
+        }
+
+        #faleConosco{
+            color: red;
+        }
+
+        .linha {
+            width: 10%;
+            height: 6px;
+            background-color: yellow;
+        }
+        .insta{
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+        .divmae{
+            margin-top: -100px;
+        }
+
+        .img-click {
+            max-width: 100%;
+        }
+        .btn-success{
+            margin-top: -15px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg amarelo">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <p style="height: auto;"> <i class="fa-solid fa-burger"></i> Estação do Lanche</p>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Início</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#ti">Produtos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#form">Contato</a>
+                </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                    <a href="https://wa.me/5511997444057"> <button class="btn btn-success" ><i class="fa-brands fa-whatsapp" style="color: #ffffff;" ></i>   Fale Conosco</button></a>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+    <div class="container-fluid">
+        <div class="row ver">
+            <div class="col-12">
+                <h1 class="h1ver">Uma delícia de sabor</h1>
+                <p class="pver">Para os clientes mais exigentes</p>
+                <button class="bttver"><p class="pbtt">VER MAIS <b>PRODUTOS</b></p></button>
+            </div>.
+        </div>
+
+        <div class="row amarelo pt-3 pb-3">
+            <div class="col-12 d-flex justify-content-around" style="flex-wrap: wrap;">
+                <img class="img-click my-3" onclick="lanche()" src="/static/img/Frame4site1.png" alt="">
+                <img class="img-click my-3" onclick="combo()" src="/static/img/frame5site2.png" alt="">
+            </div>
+        </div>
+
+        <div id="l1" class="tudo3 row pt-3 pb-4 text-center" style="background-color: #f4f4f8;" >
+            <div class="col-md-3" id="ti">
+                <img src="img/lanche1.png" alt=""  style="width: 290px">
+            </div>
+
+            <div class="col-md-6 px-4">
+                <H2 class="ti"><b>Smash burguer fenomenal</b></H2>
+                <P> Pão de gergilin, hamburguer 180g e muito queijo cheddar. </P>
+                <br>
+                <h5>R$ 18,90</h5>
+            </div>
+
+            <div class="col-md-3">
+                <a href="https://wa.me/5511997444057"><button class="bttver2" >EU QUERO!</button></a>
+            </div>
+        </div>
+
+
+        <div id="l2" class="tudo3 row pt-3 pb-4 text-center" style="background-color: #f8f1d3;" >
+            <div class="col-md-3">
+                <img src="img/lanche2.png" alt=""  style="width: 290px">
+            </div>
+
+            <div class="col-md-6 px-4">
+                <H2 class="ti"><b>Extremo picante burguer</b></H2>
+                <P>Pão de gergilin, hamburguer 180g e muito queijo cheddar, salada e molho especial de pimenta.</P>
+                <br>
+                <h5>R$24,90</h5>
+            </div>
+
+            <div class="col-md-3">
+                <a href="https://wa.me/5511997444057"><button class="bttver2" >EU QUERO!</button></a>
+            </div>
+        </div>
+
+
+        <div id="c1" class="tudo4 row pt-3 pb-4 text-center" style="background-color: #f4f4f8;" >
+            <div class="col-md-3">
+                <img src="/static/img/lanchesite2.png" alt=""  style="width: 290px">
+            </div>
+
+            <div class="col-md-6 px-4">
+                <H2 class="ti"><b>Combo Picles</b></H2>
+                <P>    Pão de gergilin, hamburguer 180g e salada com picles. Acompanha Batata de 250g e Refrigerante de 350ml.</P>
+                <br>
+                <h5>R$ 39,90</h5>
+            </div>
+
+            <div class="col-md-3">
+                <a href="https://wa.me/5511997444057"><button class="bttver2" >EU QUERO!</button></a>
+            </div>
+        </div>
+
+
+        <div class="row p-5">
+            <div class="col-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14869.512057305497!2d-50.33787230340106!3d-21.296074573465773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssesi%20birigui!5e0!3m2!1spt-BR!2sbr!4v1695384244665!5m2!1spt-BR!2sbr" width="550" height="450" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="col-6 formulario" id="form">
+                <h4 id="faleConosco"> <b style="font-size: 34px;"> FALE CONOSCO </b> </h4>
+                <div class="linha"></div>
+                <form action="">
+                    <br>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Informe seu nome</label>
+
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ex: Jose Antônio">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Telefone para contato</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ex: (18) 99696-7878">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Sua mensagem</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Informe aqui sua mensagem" rows="3"></textarea>
+                    </div>
+                </form>
+                <br>
+                <button type="button" class="btn btn-danger"
+                style="border-radius: 50px;
+                color: #FFD704;
+                width:140px">
+                <strong >ENVIAR</strong></button>
+            </div>
+        </div>
+
+        <div class="row vermesc mt-3 pb-3 pt-3">
+            <div class="col-4">
+                <p class="verde"><b>SEGUE A <br>
+                    G E N T E</b> </p>
+                    <div class="divmae">
+                        <p class="insta"><img src="/static/img/insta%20(1).png" alt="">  estacaolanche</p>
+                        <p class="insta"><img src="/static/img/yt.png" alt="">  estacaolanchetv</p>
+                        <p class="insta"><img src="/static/img/ttk%20(1).png" alt="">  estacaolanche</p>
+                    </div>
+            </div>
+            <div class="col-7">
+                <div class="row">
+                    <div class="col-6 imagem" hover="img1()"  id="img1"style="background-image: url(static/img/finalum.jpeg); "></div>
+                    <div class="col-6 imagem"  hover="img2()"id="img2"style="background-image: url(static/img/img2final.jpeg);"></div>
+                </div>
+                <div class="row" >
+                    <div class="col-4 imagem-p"hover="img3()" id="img3" style="background-image: url(static/img/img3final.jpeg);"> </div>
+                    <div class="col-4 imagem-p" hover="img4()" id="img4"style="background-image: url(static/img/img4final.jpeg);"></div>
+                    <div class="col-4 imagem-p"  hover="img5()"id="img5" style="background-image: url(static/img/img5final.jpeg);"></div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+
+    <footer class="amarelo py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex align-items-center">
+                    <p style="height: auto;"> <i class="fa-solid fa-burger"></i> Estação do Lanche</p>
+                </div>
+                <div class="col-sm-8">
+                    <p class="branco">(18) 99123-1234 / (18) 3636-3636</p>
+                    <p class="branco">Rua Lorem Ipsum Nº 123, Centro - Birigui / SP</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+        document.getElementsByClassName('bttver')[0].addEventListener('click', function() {
+            document.getElementsByClassName('tudo3 row pt-3 pb-4 text-center')[0].scrollIntoView({ behavior: 'smooth' });
+        });
+
+
+
+
+        function lanche() {
+            document.getElementById("l1").style.display = "flex"
+            document.getElementById("l2").style.display = "flex"
+            document.getElementById("c1").style.display = "none"
+        }
+
+
+        function combo() {
+            document.getElementById("l1").style.display = "none"
+            document.getElementById("l2").style.display = "none"
+            document.getElementById("c1").style.display = "flex"
+        }
+
+
+    </script>
+<script src="https://kit.fontawesome.com/50ad9d6d7c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
